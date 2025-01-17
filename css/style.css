@@ -1,0 +1,199 @@
+html, body {
+    padding: 0;
+    margin: 0;
+}
+
+#hero-section, #contact-section {
+    background: linear-gradient(300deg, #CBDCEB, #608BC1, #133E87);
+}
+
+#skills-section {
+    background-color: #f8f9fa;
+}
+
+.hero-container, .education-container, .skills-container, .bible-project-container, .contact-container {
+    margin: 0 50px;
+    display: grid;
+}
+
+.hero-container, .education-container, .skills-container, .bible-project-container {
+    grid-template: 100vh / 50% 50%;
+}
+
+.contact-container {
+    grid-template: 60vh / 50% 50%;
+}
+
+.hero-text, .hero-img, .education-content, .education-img, .current, .learning, .bible-project-text, .bible-project-img, .contact-text, .contact-details, .footer-text {
+    display: flex;
+    align-items: center;
+}
+
+.hero-text, .hero-img, .education-content, .education-img, .current, .learning, .bible-project-text, .bible-project-img, .contact-text, .contact-details {
+    justify-content: center;
+}
+
+.footer-text {
+    justify-content: flex-start;
+}
+
+.education-content, .current, .learning, .contact-details {
+    flex-direction: column;
+}
+
+.hero-text h1, .current h2, .learning h2, .contact-text h2 {
+    font-family: "Roboto Serif", serif;
+}
+
+.hero-text h1, .contact-text h2, .footer-text, .education-content a {
+    color: #fff;
+}
+
+.hero-text h1, .contact-text h2 {
+    font-weight: 500;
+}
+
+.hero-text h1 {
+    font-size: 2.5rem;
+}
+
+.contact-text h2 {
+    font-size: 2rem;
+}
+
+.education-content h2, .education-content a, .current p, .learning p, .bible-project-text h2, .contact-details, .footer-text {
+    font-family: "Open Sans", serif;
+}
+
+.resume-link {
+    align-self: flex-start;
+}
+
+.education-content a {
+    border: 10px solid #133E87;
+    background-color: #133E87;
+    border-radius: 10px;
+    padding: 5px 40px;
+    font-size: 1.2rem;
+    text-decoration: none;
+}
+
+.education-content a:hover {
+    border: 10px solid #CBDCEB;
+    background-color: #CBDCEB;
+    color: #000;
+}
+
+.education-content h2, .bible-project-text h2 {
+    font-weight: 400;
+    font-size: 1.5rem;
+}
+
+.current h2, .learning h2 {
+    font-size: 1.3rem;
+}
+
+.current p, .learning p {
+    font-size: 1rem;
+}
+
+.footer-text {
+    font-size: 0.9rem;
+}
+
+.contact-details {
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+
+.contact-details a {
+    border: 10px solid #fff;
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 5px 40px;
+    font-size: 1.2rem;
+    text-decoration: none;
+    color: #000;
+}
+
+.contact-details a:hover {
+    border: 10px solid #133E87;
+    background-color: #133E87;
+    color: #fff;
+}
+
+.hero-img img, .education-img img, .skills-icons, .bible-project-img img {
+    object-fit: cover;
+}
+
+.hero-img img, .education-img img, .bible-project-img img {
+    height: 550px;
+    width: 550px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.skills-icons {
+    height: 30px;
+    width: 30px;    
+    border-radius: 50%;
+    
+}
+
+@media (max-width: 1199px) {
+    .hero-container, .education-container, .bible-project-container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .education-container, .hero-img {
+        margin-top: 50px;
+    }
+
+    .hero-text, .hero-img, .education-content, .education-img, .bible-project-text, .bible-project-img {
+        justify-content: flex-start;
+        align-items: flex-start;
+    }
+
+    .hero-img, .education-img, .bible-project-img {
+        order: -1;
+    }
+
+    .hero-img img, .education-img img, .bible-project-img img {
+        height: 450px;
+        width: 450px;
+    }
+
+    .resume-link {
+        margin-bottom: 50px;
+    }
+}
+
+@media (max-width: 768px) {
+    .hero-container, .education-container, .bible-project-container, .contact-container, .skills-container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .education-container, .hero-img, .current h2 {
+        margin-top: 50px;
+    }
+
+    .hero-text, .hero-img, .education-content, .education-img, .bible-project-text, .bible-project-img, .contact-text, .contact-details, .current, .learning {
+        justify-content: flex-start;
+        align-items: flex-start;
+    }
+
+    .hero-img, .education-img, .bible-project-img {
+        order: -1;
+    }
+
+    .hero-img img, .education-img img, .bible-project-img img {
+        height: 350px;
+        width: 350px;
+    }
+
+    .resume-link, .learning p img, .bible-project-text h2{
+        margin-bottom: 50px;
+    }
+}
